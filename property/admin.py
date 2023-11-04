@@ -18,11 +18,13 @@ class FlatAdmin(admin.ModelAdmin):
     raw_id_fields = ("liked_by",)
     inlines = [OwnershipInline]
 
+
 @admin.register(Owner)
 class OwnerAdmin(admin.ModelAdmin):
     raw_id_fields = ("flats_in_property",)
     inlines = [OwnershipInline]
     exclude = ("flats_in_property",)
+
 
 @admin.register(Complaint)
 class ComplaintAdmin(admin.ModelAdmin):
