@@ -73,7 +73,7 @@ class Complaint(models.Model):
         blank=True,
         null=True,
         verbose_name="Кто жаловался",
-        related_name="who_complained"
+        related_name="user_complains"
     )
     flat = models.ForeignKey(
         Flat,
