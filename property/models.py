@@ -79,7 +79,7 @@ class Complaint(models.Model):
         Flat,
         on_delete=models.CASCADE,
         verbose_name="Квартира, на которую пожаловались",
-        related_name="flat_with_complaints"
+        related_name="flat_complaints"
     )
     text = models.TextField(verbose_name="Текст жалобы", blank=True)
 
